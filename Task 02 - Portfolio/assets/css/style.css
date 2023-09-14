@@ -1,0 +1,546 @@
+/* RALEWAY FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-color: #eee;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #6e07f3;
+}
+
+button,
+a,
+img {
+  cursor: pointer;
+}
+
+img {
+  pointer-events: none;
+}
+
+/* Header Start */
+
+header {
+  width: 100%;
+  height: max-content;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #eee;
+}
+
+.headLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.headLeft h2 {
+  font-size: 1.7rem;
+}
+
+/* Header Responsive */
+
+@media screen and (max-width:640px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .headLeft h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Header End */
+
+/* Hero Start */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heroMid {
+  margin: 1.2rem;
+}
+
+.heroMid .topText {
+  font: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.heroMid .midText {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.heroMid .bottomText {
+  font: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Hero Responsive */
+
+@media screen and (max-width:640px) {
+  .heroMid .midText {
+    font-size: 2rem;
+  }
+}
+
+/* Hero End */
+
+/* About */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  flex-direction: column;
+}
+
+.abtImg img {
+  width: 30rem;
+}
+
+.abtInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 2rem;
+  background-color: #6e07f3;
+}
+
+.abtInfo h2 {
+  color: #eee;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.abtInfo p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #eee;
+  margin: 3rem 10%;
+}
+
+/* About Responsive */
+
+@media screen and (max-width:640px) {
+  .abtImg img {
+    width: 15rem;
+  }
+
+  .abtInfo p {
+    margin: 3rem 5%;
+  }
+}
+
+/* About End */
+
+/* More About */
+
+.moreAbt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 4rem 0;
+  flex-direction: column;
+}
+
+.moreHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreHead h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.rowImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowImg img {
+  height: 320px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.column ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  margin: 1rem 0;
+}
+
+.column ul li strong {
+  font-weight: 600;
+}
+
+/* More About Responsive */
+
+@media screen and (max-width:640px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rowImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .rowImg img {
+    height: 250px;
+  }
+}
+
+/* More About End */
+
+/* Progress */
+.progress {
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 2rem;
+}
+
+.progressHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressHead h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.progress .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.progress .row .column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 2rem;
+}
+
+.skill {
+  margin-bottom: 35px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.skill p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1716;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.skillBar {
+  width: 100%;
+  height: 10px;
+  background-color: #6e07f3;
+  display: block;
+}
+
+.s1 {
+  width: 90%;
+}
+
+.s2 {
+  width: 80%;
+}
+
+.s3 {
+  width: 65%;
+}
+
+.s4 {
+  width: 30%;
+}
+
+.s5 {
+  width: 55%;
+}
+
+.s6 {
+  width: 67%;
+}
+
+.s7 {
+  width: 30%;
+}
+
+.s8 {
+  width: 45%;
+}
+
+/* Progress Responsive */
+
+@media screen and (max-width:640px) {
+  .progress .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress .row .column {
+    width: 90%;
+    margin: 1rem 1rem;
+  }
+}
+
+/* Progress End */
+
+/* Education */
+
+.education {
+  display: flex;
+  height: max-content;
+  width: 100%;
+  flex-direction: column;
+}
+
+.eduHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eduHead h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.eduMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.eduCard {
+  height: max-content;
+  width: 100%;
+  background: #eee;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom: 2px solid #6e07f3;
+}
+
+.cardTitle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.cardTitle h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cardTitle p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+.cardDesc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: max-content;
+  padding-bottom: 2rem;
+  margin: 0 2rem;
+  color: #000;
+}
+
+.cardDesc span {
+  background: #6e07f3;
+  margin-right: 5px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: #eee;
+}
+
+/* Education Responsive */
+
+@media screen and (max-width:640px) {
+  .cardTitle h3 {
+    font-size: 20px;
+  }
+
+  .cardTitle p {
+    font-size: 13px;
+  }
+
+  .cardDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardDesc span {
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Education End */
+
+/* Contact */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.contactHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHead h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.contactMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactMain a {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Contact Responsive */
+
+@media screen and (max-width:640px) {
+  .contactMain {
+    margin: 0 0.8rem;
+  }
+  .contactMain a {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: baseline;
+    align-items: flex-start;
+    margin: 1rem 0.5rem;
+  }
+}
+
+/* Contact End */
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  background: #6e07f3;
+  padding: 2rem;
+}
+
+.copyRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyRight p {
+  color: #eee;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Footer end */
